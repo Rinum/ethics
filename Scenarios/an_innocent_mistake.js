@@ -219,7 +219,7 @@ Scenario = {
 					"scene": "positive_result_of_hiding_mistake"
 				},
 				{
-					"text": "Yes, we were told the nurse might have set the infusion rate wrong so I came down to check and fix it.",
+					"text": "Yes, everything is fine.",
 					"scene": "doctor_is_suspicious"
 				}
 			]
