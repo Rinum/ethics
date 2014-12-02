@@ -4,12 +4,13 @@
     <list default="true" id="6c219cfa-0702-4562-807e-3bc6aaf15776" name="Default" comment="" />
     <ignored path="THPRPG.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/index.html" changelist="6c219cfa-0702-4562-807e-3bc6aaf15776" time="1417308572418" ignored="false" />
+    <file path="/index.html" changelist="6c219cfa-0702-4562-807e-3bc6aaf15776" time="1417484681646" ignored="false" />
     <file path="/Test.json" changelist="6c219cfa-0702-4562-807e-3bc6aaf15776" time="1417305380184" ignored="false" />
-    <file path="/app.js" changelist="6c219cfa-0702-4562-807e-3bc6aaf15776" time="1417359359060" ignored="false" />
+    <file path="/app.js" changelist="6c219cfa-0702-4562-807e-3bc6aaf15776" time="1417497117708" ignored="false" />
     <file path="/foobar.js" changelist="6c219cfa-0702-4562-807e-3bc6aaf15776" time="1417305937688" ignored="false" />
-    <file path="/app.css" changelist="6c219cfa-0702-4562-807e-3bc6aaf15776" time="1417309366146" ignored="false" />
+    <file path="/app.css" changelist="6c219cfa-0702-4562-807e-3bc6aaf15776" time="1417484963659" ignored="false" />
     <file path="/a.dummy" changelist="6c219cfa-0702-4562-807e-3bc6aaf15776" time="1417306186038" ignored="false" />
+    <file path="/an_innocent_mistake.js" changelist="6c219cfa-0702-4562-807e-3bc6aaf15776" time="1417498530767" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +33,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="14" selection-start="30" selection-end="30" vertical-scroll-proportion="-1.3076923">
+            <state line="14" column="97" selection-start="539" selection-end="539" vertical-scroll-proportion="-9.153846">
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -42,19 +43,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="foobar.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Scenarios/foobar.js">
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Lib/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="2" selection-start="208" selection-end="208" vertical-scroll-proportion="0.0">
+            <state line="38" column="26" selection-start="967" selection-end="967" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Lib/js/app.js">
+      <file leaf-file-name="an_innocent_mistake.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Scenarios/an_innocent_mistake.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="8" selection-start="1251" selection-end="1251" vertical-scroll-proportion="0.5655556">
+            <state line="143" column="50" selection-start="6318" selection-end="6318" vertical-scroll-proportion="0.62222224">
               <folding />
             </state>
           </provider>
@@ -63,7 +64,7 @@
       <file leaf-file-name="app.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Lib/css/app.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="44" selection-start="315" selection-end="315" vertical-scroll-proportion="0.0">
+            <state line="35" column="1" selection-start="619" selection-end="619" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -84,6 +85,7 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/Lib/css/app.css" />
         <option value="$PROJECT_DIR$/Lib/js/app.js" />
+        <option value="$PROJECT_DIR$/Scenarios/an_innocent_mistake.js" />
       </list>
     </option>
   </component>
@@ -215,6 +217,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Rinum\THPRPG\Scenarios" />
       <recent name="F:\Rinum\THPRPG\Lib\images" />
       <recent name="F:\Rinum\THPRPG\Lib\fonts" />
     </key>
@@ -239,7 +242,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2497332" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13767342" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -315,9 +318,16 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Scenarios/foobar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="2" selection-start="208" selection-end="208" vertical-scroll-proportion="0.31653887">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="14" selection-start="30" selection-end="30" vertical-scroll-proportion="-1.3076923">
+        <state line="14" column="97" selection-start="539" selection-end="539" vertical-scroll-proportion="-9.153846">
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -326,23 +336,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Scenarios/foobar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="2" selection-start="208" selection-end="208" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Lib/css/app.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="44" selection-start="315" selection-end="315" vertical-scroll-proportion="0.0">
+        <state line="35" column="1" selection-start="619" selection-end="619" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Lib/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="8" selection-start="1251" selection-end="1251" vertical-scroll-proportion="0.5655556">
+        <state line="38" column="26" selection-start="967" selection-end="967" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Scenarios/an_innocent_mistake.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="143" column="50" selection-start="6318" selection-end="6318" vertical-scroll-proportion="0.62222224">
           <folding />
         </state>
       </provider>

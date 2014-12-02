@@ -8,6 +8,8 @@ TextRPG.prototype.init = function(){
 		return;
 	}
 
+	this.stack = [];
+
 	this.loadScene(Scenario.scenes[Scenario.first_scene]);
 };
 
@@ -27,8 +29,16 @@ TextRPG.prototype.getTitle = function(scene){
 	return title;
 };
 
+TextRPG.prototype.getText = function(text){
+	return text.replace(/(?:\r\n|\r|\n)/g, '<br />');
+};
+
 TextRPG.prototype.loadScene = function(scene){
 	var game = this;
+
+	if(!scene) return;
+
+	game.stack.push(scene);
 
 	var wrapper = $('<div></div>');
 
@@ -51,46 +61,58 @@ TextRPG.prototype.loadScene = function(scene){
 
 	//Wrapper is done
 
-	var left_column = $('<div></div>').css({
-		"display": "inline-block",
+	var table = $('<table></table>').css({
+		"width": "100%"
+	});
+	var tbody = $('<tbody></tbody>');
+	var row = $('<tr></tr>');
+
+	var left_column = $('<td></td>').css({
 		"vertical-align": "top",
-		"max-width": "38%",
-		"padding-right": "2%"
+		"padding-right": "10px",
+		"width": "40%"
 	});
 
-	var right_column = $('<div></div>').css({
+	var right_column = $('<td></td>').css({
 		"display": "inline-block",
 		"vertical-align": "top",
-		"min-width": "60%"
+		"width": "100%"
 	});
 
-	scene_wrapper.append(left_column);
-	scene_wrapper.append(right_column);
+	if(scene.image){ row.append(left_column);}
+
+	row.append(right_column);
+	tbody.append(row);
+	table.append(tbody);
+	scene_wrapper.append(table);
 
 	//Scene wrapper is done
 
 	/* Left Column */
-	var image_wrapper = $('<div></div>').css({
-		"width": "100%",
-		"background-color": "#fff",
-		"border-radius": "5px",
-		"border": "#bfbfbf solid 1px",
-		"box-shadow": "#fff 0px 0px 1px 1px",
-		"padding": "1px",
-		"line-height": "0px" //hack to remove whitespace below image
-	});
+	if(scene.image){
+		var image_wrapper = $('<div></div>').css({
+			"width": "100%",
+			"background-color": "#fff",
+			"border-radius": "5px",
+			"border": "#bfbfbf solid 1px",
+			"box-shadow": "#fff 0px 0px 1px 1px",
+			"padding": "1px",
+			"line-height": "0px" //hack to remove whitespace below image
+		});
 
-	var image = $('<img src="./Lib/images/tallgradient3.png">').css({
-		"width": "100%",
-		"border-radius": "5px"
-	});
+		var image = $('<img src="./Lib/images/' + scene.image + '">').css({
+			"width": "100%",
+			"border-radius": "5px"
+		});
 
-	image_wrapper.append(image);
+		image_wrapper.append(image);
 
-	left_column.append(image_wrapper);
+		left_column.append(image_wrapper);
+	}
 
 	/* Right Column */
-	var text = $('<div></div>').html(scene.text).css({
+
+	var text = $('<div></div>').html(game.getText(scene.text)).css({
 		"background-color": "#fff",
 		"padding": "10px",
 		"border-radius": "5px",
@@ -100,18 +122,57 @@ TextRPG.prototype.loadScene = function(scene){
 
 	right_column.append(text);
 
+	if(game.stack.length > 1){
+		var back = $('<div></div>').html("&laquo; Undo").css({
+			"margin": "10px",
+			"color": "#1ea7e1",
+			"cursor": "pointer"
+		});
+
+		back.on('click', function(){
+			var current_scene = game.stack.pop();
+			var previous_scene = game.stack.pop();
+
+			game.loadScene(previous_scene);
+		});
+
+		right_column.append(back);
+	}
+
 	if(scene.options){
 		var options = $('<div></div>').css({
+			"position": "relative",
 			"margin-top": "10px",
-			"margin-left": "10px"
+			"margin-left": "20px"
 		});
+
+		var num = 1;
 
 		for(var i in scene.options){
 			var s = scene.options[i];
 
-			var option = $('<div></div>').html(s.text).css({
-				"cursor": "pointer"
+			var option = $('<div></div>').css({
+				"position": "relative"
 			});
+
+			if(num > 1){
+				option.css({
+					"margin-top": "10px"
+				});
+			}
+
+			var number = $('<div></div>').html((num++) + ".").css({
+				"position": "absolute",
+				"top": "0px",
+				"left": "-10px"
+			});
+
+			var option_text = $('<div></div>').html(s.text).css({
+				"cursor": "pointer",
+				"margin-left": "10px"
+			});
+
+			option.append(number, option_text);
 
 			option.on('click', (function(scene_id){
 				return function(){
