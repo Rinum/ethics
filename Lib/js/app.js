@@ -139,7 +139,7 @@ TextRPG.prototype.loadScene = function(scene){
 		right_column.append(back);
 	}
 
-	if(scene.options){
+	if(scene.options && scene.options.length){
 		var options = $('<div></div>').css({
 			"position": "relative",
 			"margin-top": "10px",
@@ -202,6 +202,7 @@ TextRPG.prototype.loadScene = function(scene){
 
 	//Put the wrapper in view
 	$('#viewport').html(wrapper);
+	$('#viewport').append('<div style="margin-top: 10px;"><a style="float: right; font-size: 12px; color: #666; text-decoration: none;" href="https://github.com/Rinum/ethics">View Source on GitHub</a>');
 };
 
 $(document).ready(function(){
