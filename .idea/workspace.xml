@@ -10,7 +10,7 @@
     <file path="/foobar.js" changelist="6c219cfa-0702-4562-807e-3bc6aaf15776" time="1417305937688" ignored="false" />
     <file path="/app.css" changelist="6c219cfa-0702-4562-807e-3bc6aaf15776" time="1417484963659" ignored="false" />
     <file path="/a.dummy" changelist="6c219cfa-0702-4562-807e-3bc6aaf15776" time="1417306186038" ignored="false" />
-    <file path="/an_innocent_mistake.js" changelist="6c219cfa-0702-4562-807e-3bc6aaf15776" time="1417498530767" ignored="false" />
+    <file path="/an_innocent_mistake.js" changelist="6c219cfa-0702-4562-807e-3bc6aaf15776" time="1417501708987" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,19 +43,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="app.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Lib/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="26" selection-start="967" selection-end="967" vertical-scroll-proportion="0.0">
+            <state line="38" column="26" selection-start="967" selection-end="967" vertical-scroll-proportion="0.43444446">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="an_innocent_mistake.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="an_innocent_mistake.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Scenarios/an_innocent_mistake.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="143" column="50" selection-start="6318" selection-end="6318" vertical-scroll-proportion="0.62222224">
+            <state line="133" column="272" selection-start="6192" selection-end="6192" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -235,7 +235,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
+    <frame x="1912" y="-8" width="1936" height="1096" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -343,16 +343,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Lib/js/app.js">
+    <entry file="file://$PROJECT_DIR$/Scenarios/an_innocent_mistake.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="26" selection-start="967" selection-end="967" vertical-scroll-proportion="0.0">
+        <state line="133" column="272" selection-start="6192" selection-end="6192" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Scenarios/an_innocent_mistake.js">
+    <entry file="file://$PROJECT_DIR$/Lib/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="143" column="50" selection-start="6318" selection-end="6318" vertical-scroll-proportion="0.62222224">
+        <state line="38" column="26" selection-start="967" selection-end="967" vertical-scroll-proportion="0.43444446">
           <folding />
         </state>
       </provider>
